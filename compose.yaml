@@ -7,3 +7,11 @@ services:
     build: .
     ports:
       - 443:8080
+  
+  headscale-ui:
+    container_name: headscale-ui
+    image: ghcr.io/gurucomputing/headscale-ui:latest
+    pull_policy: always
+    restart: unless-stopped
+    ports:
+      - 9080:80
