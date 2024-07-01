@@ -6,7 +6,7 @@ services:
     container_name: headscale
     build: .
     ports:
-      - 443:8080
+      - 8080:443
   
   headscale-ui:
     container_name: headscale-ui
