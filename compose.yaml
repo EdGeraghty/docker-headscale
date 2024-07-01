@@ -3,6 +3,7 @@ version: "4.0.0"
 
 services:
   headscale:
+    container_name: headscale
     build: .
     ports:
       - 443:8080
