@@ -4,3 +4,5 @@ version: "4.0.0"
 services:
   headscale:
     build: .
+    ports:
+      - 443:8080
